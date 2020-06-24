@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Updating Text
+    </title>
+
+    <style>
+        .options {
+           text-align: center;
+           color: black;
+           font-weight: bold ;
+        }
+        .textarea {
+           text-align: center;
+
+        }
+        #i1 {
+           text-align: center;
+        }
+        * {
+          background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 id = "i1"> WELCOME TO THE Y TEXT UPDATER</h1>
+<form action = "/analyse" method = "POST"> {%csrf_token%}
+      <div class = "textarea">
+    <textarea name="text" width="1200px" height="700px" style="margin: 0px; width: 848px; height: 246px; ">
+    </textarea>
+          </div>
+       <br> <br>
+    <div class = "options">
+    <label for = "remove Punctuation"> Remove Punctuation</label>
+    <input type = "checkbox" name = "remove Punctuation" id = "remove Punctuation"> <br>
+
+    <label for = "Upper Case"> Upper Case</label>
+    <input type = "checkbox" name = "Upper Case" id="Upper Case"> <br>
+
+    <label for = "Lower Case"> Lower Case</label>
+    <input type = "checkbox" name = "Lower Case" id="Lower Case"> <br>
+
+    <label for = "Space Remover"> Space Remover</label>
+    <input type = "checkbox" name = "Space Remover" id = "Space Remover"> <br>
+
+
+     <br> <br>
+
+        <input type = "submit" name = "submit" value = "Analyse Text" style = "font-size:20px; color:brown;">
+
+</form>
+</div>
+
+</body>
+
+
+
+
+
+</html>
